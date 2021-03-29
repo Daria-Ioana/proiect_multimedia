@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contect="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="1_1066_AICOBOAE_Daria.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="animatie">Photo editor</h1>
+    <div class="continut">
+        <div class="intrare">
+            <input type="file" id="fisierIntrare">
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <h4>Effects</h4>
+    <div>
+        <!--LUMINOZITATE-->
+        <div>
+            <button class="scadeLuminozitate">-</button>
+            <button disabled>Brightness</button>
+            <button class="adaugaLuminozitate">+</button>
+        </div>
+        <!--CONTRAST-->
+        <div>
+            <button class="scadeContrast">-</button>
+            <button disabled>Contrast</button>
+            <button class="adaugaContrast">+</button>
+        </div>
+        <!--SATURATIE-->
+        <div>
+            <button class="scadeSaturatie">-</button>
+            <button disabled>Saturation</button>
+            <button class="adaugaSaturatie">+</button>
+        </div>
+    </div>
+
+    <h4>Filters</h4>
+    <div>
+        <button class="adaugaVintage">Vintage</button>
+        <button class="adaugaSinCity">Sin City</button>
+        <button class="adaugaOrangePeel">Orange Peel</button>
+    </div>
+
+    <h4>Download or reset</h4>
+    <div>
+        <button id="butonDownload">Download Your Photo</button>
+        <button id="butonReset">Reset Your Filters</button>
+    </div>
+
+    <!--libraria folosita: Caman-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+    <script type="text/javascript" src="1_1066_AICOBOAE_Daria.js"></script>
+    </div>
+</body>

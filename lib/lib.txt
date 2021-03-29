@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+        <meta name="viewport" contect="width=device-width, initial-scale=1.0">
+        <tltle>STEFAN'S MIU CHARM SECRETS</tltle>
+
+ <div class="btn-group btn-group-sm">
+                                <button class="filter-btn brightness-remove btn btn-info">-</button>
+                                <button class="btn btn-secondary btn-disabled" disabled>Brightness</button>
+                                <button class="filter-btn brightness-add btn btn-info">+</button>
+                            </div>
+<canvas id="canvas"></canvas>
+
+
+
+var canvas=document.getElementById("canvas");
+const ctx=canvas.getContext("2d");
+
+let image=new Image();
+let fileName='';
+
+document.addEventListener('click', (e)=>{
+        if(e.target.classList.contains('filter-btn')){
+            if(e.target.classList.contains('brightness-add')){
+                Caman('#canvas',img,function(){
+                    this.brightness(5).render();
+                });
+            }else if(e.target.classList.contains('brightness-remove')){
+                Caman('#canvas',img,function(){
+                    this.brightness(-5).render();
+                });
+
+ butonReset.addEventListener('click',(e)=>{
+    Caman("#canvas",img,function(){
+        this.revert();
+    });
+});
+
+event=new MouseEvent('click');
+    link.dispatchEvent(event);
+
